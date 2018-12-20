@@ -6,25 +6,33 @@ const port=process.env.PORT || 3000
 //new Token xoxp-251748679685-252811536534-510267500854-f2e308380eff3946b7f255817f79d12d
 
 
+/*
+// Make a request for a user with a given ID
+axios.get('/webhook')
+  .then(function (response) {
+    // handle success
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/html');
+    res.end('<h1>This is the webhook Endpoint </h1>');
+    console.log(response);
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+  .then(function () {
+    // always executed
+  });
+*/
+
+
+
+
+
 const server = http.createServer((req, res) => {
 
 
-  // Make a request for a user with a given ID
-  axios.get('/webhook')
-    .then(function (response) {
-      // handle success
-      res.statusCode = 200;
-      res.setHeader('Content-Type', 'text/html');
-      res.end('<h1>This is the webhook Endpoint </h1>');
-      console.log(response);
-    })
-    .catch(function (error) {
-      // handle error
-      console.log(error);
-    })
-    .then(function () {
-      // always executed
-    });
+
 
 
 
