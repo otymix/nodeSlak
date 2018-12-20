@@ -42,23 +42,9 @@ const server = http.createServer((req, res) => {
     name: 'mybot'
   });
 
-  axios.get('/webhook')
-    .then(function (response) {
-      // handle success
-      res.statusCode = 200;
-      res.setHeader('Content-Type', 'text/html');
-      res.end('<h1>This is the webhook Endpoint </h1>');
-      console.log(response);
-    })
-    .catch(function (error) {
-      // handle error
-      console.log(error);
-    })
-    .then(function () {
-      // always executed
-    });
 
-/*
+
+
   // Start Handler
 bot.on('start', () => {
   const params = {
@@ -144,7 +130,7 @@ function runHelp() {
     `Type @jokebot with either 'chucknorris', 'yomama' or 'random' to get a joke`,
     params
   );
-*/
+
   //ADDED FROM GIT LIB
 
 res.statusCode = 200;
