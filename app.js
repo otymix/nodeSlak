@@ -3,7 +3,8 @@ const axios = require('axios');
 const http = require('http');
 const port=process.env.PORT || 3000
 
-
+var express = require('express');
+var app = express();
 
 
 /*
@@ -42,6 +43,19 @@ console.log(`Server running at port `+port);
 });
 */
 
+app.get('/', function(req, res) {
+  res.send('Welcome to this awesome site!');
+});
+
+
+app.post("/ranti", function(req, res, next) {
+    let payload = req.body;
+    res.sendStatus(200);
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/html');
+    res.end('Hi I was RANTI, please call me Louis 🤖');
+
+}
 
 
 
