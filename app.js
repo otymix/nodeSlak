@@ -130,6 +130,7 @@ function runHelp() {
     `Type @jokebot with either 'chucknorris', 'yomama' or 'random' to get a joke`,
     params
   );
+  }
 
   //ADDED FROM GIT LIB
 
