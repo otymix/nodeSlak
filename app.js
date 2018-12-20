@@ -50,19 +50,8 @@ console.log(`Server running at port `+port);
 
 const server = http.createServer((req, res) => {
 
-
-    // Start Handler
-  bot.on('start', () => {
-    const params = {
-      icon_emoji: ':smiley:'
-    };
-
-    bot.postMessageToChannel(
-      'general',
-      'Get Ready To Laugh With @Jokebot!',
-      params
-    );
-  });
+console.log('ici la req :');
+console.log(req)
 res.statusCode = 200;
 res.setHeader('Content-Type', 'text/html');
 res.end('Hi I was just here, please call me Louis 🤖');
