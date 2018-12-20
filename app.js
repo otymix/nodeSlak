@@ -8,7 +8,7 @@ const port=process.env.PORT || 3000
 
 const server = http.createServer((req, res) => {
 
-
+/*
   // Make a request for a user with a given ID
   axios.get('/webhook')
     .then(function (response) {
@@ -25,7 +25,7 @@ const server = http.createServer((req, res) => {
     .then(function () {
       // always executed
     });
-
+*/
 
 
   const bot = new SlackBot(
