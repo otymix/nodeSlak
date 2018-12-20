@@ -6,7 +6,12 @@ const port=process.env.PORT || 3000
 var express = require('express');
 var app = express();
 
+const bot = new SlackBot(
+  {
+  token: process.env.SLACK_TOKEN,
 
+  name: 'AF ACE BOT'
+});
 /*
 // Make a request for a user with a given ID
 axios.get('/webhook')
@@ -45,6 +50,19 @@ console.log(`Server running at port `+port);
 
 const server = http.createServer((req, res) => {
 
+
+    // Start Handler
+  bot.on('start', () => {
+    const params = {
+      icon_emoji: ':smiley:'
+    };
+
+    bot.postMessageToChannel(
+      'general',
+      'Get Ready To Laugh With @Jokebot!',
+      params
+    );
+  });
 res.statusCode = 200;
 res.setHeader('Content-Type', 'text/html');
 res.end('Hi I was just here, please call me Louis 🤖');
@@ -74,12 +92,7 @@ app.post("/ranti", function(req, res, next) {
 
 
 
-  const bot = new SlackBot(
-    {
-    token: process.env.SLACK_TOKEN,
 
-    name: 'AF ACE BOT'
-  });
 
 
 
