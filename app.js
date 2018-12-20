@@ -38,7 +38,8 @@ const server = http.createServer((req, res) => {
 
   const bot = new SlackBot(
     {
-    token: 'xoxp-251748679685-252811536534-510267500854-f2e308380eff3946b7f255817f79d12d',
+    token: 'xoxp-251748679685-252811536534-510288095894-b74d633e4a2dc3c6a038b5d68d4d44c2',
+
     name: 'mybot'
   });
 
