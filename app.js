@@ -44,7 +44,9 @@ console.log(`Server running at port `+port);
 */
 
 app.get('/', function(req, res) {
-  res.send('Welcome to this awesome site!');
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end('Hi I was just here, please call me Louis 🤖');
 });
 
 
