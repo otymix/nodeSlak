@@ -34,6 +34,7 @@ const server = http.createServer((req, res) => {
     name: 'mybot'
   });
 
+/*
 
   // Start Handler
 bot.on('start', () => {
@@ -120,7 +121,7 @@ function runHelp() {
     `Type @jokebot with either 'chucknorris', 'yomama' or 'random' to get a joke`,
     params
   );
-
+*/
   //ADDED FROM GIT LIB
 
 res.statusCode = 200;
