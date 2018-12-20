@@ -40,7 +40,7 @@ axios.get('/webhook')
     {
     token: process.env.SLACK_TOKEN,
 
-    name: 'mybot'
+    name: 'AF ACE BOT'
   });
 
 
