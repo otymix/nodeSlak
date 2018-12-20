@@ -43,6 +43,19 @@ console.log(`Server running at port `+port);
 });
 */
 
+const server = http.createServer((req, res) => {
+
+res.statusCode = 200;
+res.setHeader('Content-Type', 'text/html');
+res.end('Hi I was just here, please call me Louis 🤖');
+
+
+});
+server.listen(port,() => {
+console.log(`Server running at port `+port);
+});
+
+
 app.get('/', function(req, res) {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html');
